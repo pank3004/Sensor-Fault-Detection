@@ -62,7 +62,7 @@ class DataTransformation:
         try: 
             dataframe=self.get_data(feature_store_file_path=self.feature_store_file_path)
 
-            X=dataframe.drop(columns=TARGET_COLUMN)
+            X=dataframe.drop(columns=[TARGET_COLUMN, 'Wafer'])
             y=np.where(dataframe[TARGET_COLUMN]==-1,0,1)
 
             X_train, X_test, y_train, y_test=train_test_split(X,y,test_size=0.2)

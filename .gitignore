@@ -174,3 +174,7 @@ cython_debug/
 .pypirc
 
 cred.txt
+artifacts
+prediction_artifacts
+predictions
+logs
