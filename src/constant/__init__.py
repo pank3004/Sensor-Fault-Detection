@@ -1,16 +1,22 @@
 import os
 
 
-AWS_S3_BUCKET_NAME = "wafer-fault"
+AWS_S3_BUCKET_NAME = "waferprojfinal"
 MONGO_DATABASE_NAME = "Wafer"
 MONGO_COLLECTION_NAME = "Wafer_Fault"
+MONGODB_URL_KEY = "MONGODB_URL"
+
 
 
 TARGET_COLUMN = "quality"
-MONGO_DB_URL="mongodb+srv://pankajkumawat04:PankajKumawat123@cluster0.8yeeask.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+
 
 
 MODEL_FILE_NAME = "model"
 MODEL_FILE_EXTENSION = ".pkl"
 
 ARTIFACT_FOLDER =  "artifacts"
+
+AWS_ACCESS_KEY_ID_ENV_KEY = "AWS_ACCESS_KEY_ID"
+AWS_SECRET_ACCESS_KEY_ENV_KEY = "AWS_SECRET_ACCESS_KEY"
+REGION_NAME = "us-east-1"
