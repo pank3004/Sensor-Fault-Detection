@@ -59,6 +59,7 @@ jobs:
           docker build -t ${{ secrets.AWS_ECR_REPO_URI }}:$IMAGE_TAG .
           docker push ${{ secrets.AWS_ECR_REPO_URI }}:$IMAGE_TAG
           
+      
           
   Continuous-Deployment:
     needs: build-and-push-ecr-image
